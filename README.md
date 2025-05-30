@@ -82,15 +82,15 @@ Designed interactive dashboards for real-time analysis.
 
 ## Dashboard Features & Metrics
 
-### 1. Admission Rate Analysis
+### 1. Admission Profile
 
-Metric: Admission percentage calculated based on district population.
+Metric: Admission rate calculated based on live birth.
 
 ### Formula: 
   
-  Admission Percentage = 
+  Admission Rate = 
   
-    DIVIDE(SUM(Master_Sheet[Num_of_Admission]), SUM(Population[Population]), 0) * 100 
+	DIVIDE(SUM(Master_Sheet[Num_of_Admission]), SUM('Live Birth'[Live Birth])) * 100
   
 ### 2. Discharge Rate Analysis
 
@@ -202,22 +202,28 @@ District_Rank =
 
 ## Key Insights (Jan 2024 - March 2025)
 
-**High Admission Rate**: Saran
+**Admission Rate**: The admission rate i.e. (the percentage of admission on live birth) of neonates in the SNCU across Bihar 15.55%. 
 
-<img width="670" alt="SNCU_Dashboard_pg3 - Copy" src="https://github.com/user-attachments/assets/481bf7f5-7a05-41e5-a7b0-e7caf6d2efc9" />
-
-**Low Admission Rate**: Vaishali
+<img width="719" alt="image" src="https://github.com/user-attachments/assets/6f1e81a0-e769-47d7-a2ac-d91f5e4248ba" />
 
 **High Discharge Percentage**: Purbi Champaran, Sitamarhi
 
 <img width="667" alt="Discharge percentage based on admission" src="https://github.com/user-attachments/assets/7afbe5a5-da55-464b-a260-d3903f7b4ab8" />
 
+**Death Analysis**
+
 **High Death Percentage**: Begusarai (critical concern)
 
-**Outborn Deaths**: 66.95% vs. Inborn Deaths: 33.05%
+Outborn Deaths: 67.34% vs. Inborn Deaths: 32.66%
 
-<img width="959" alt="SNCU_Dashboard_pg6" src="https://github.com/user-attachments/assets/ebc22354-44ec-4118-83ff-1535c9e121c1" />
+<img width="584" alt="image" src="https://github.com/user-attachments/assets/190b2bcf-d3bf-417a-867f-94a3529959d3" />
 
+**Death Percentage**
+
+<img width="221" alt="image" src="https://github.com/user-attachments/assets/f008de98-69b8-4e8a-b309-0d79bf04c05c" />
+
+
+The overall neonatal death percentage across Bihar has reduced from *4.07%* in the first quarter of 2024 (Jan-March) to *2.84%* in first quarter of 2025(Jan-March). 
 
 **Major Referral Sources**: PHCs have the highest outborn referrals
 
